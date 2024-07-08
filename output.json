@@ -1,0 +1,371 @@
+[
+    {
+        "Sheet1": {
+            "[Heading]": "Assam Cumulative Flood Report from 01-05-2024 to 07-07-2024",
+            "[SubHeading]": "Assam Cumulative Flood Report from 01-05-2024 to 07-07-2024",
+            "[CurrentTimestamp]": "Report Generated On: 08-07-2024 10:40 AM",
+            "[riversAtDangerLevel]": "Kopili (Kampur), Kopili (Dharamtul), Brahmaputra (Dibrugarh), Brahmaputra (Neamatighat), Dikhou (Sivasagar), Jia-Bharali (Nt Road Crossing), Beki (Road Bridge), Brahmaputra (Tezpur), Subansiri (Badatighat), Disang (Nanglamuraghat), Burhidihing (Chenimari(Khowang)), Brahmaputra (Guwahati), Brahmaputra (Dhubri), Dhansiri (S) (Numaligarh), Puthimari (Nh Road Crossing), Brahmaputra (Goalpara), Sankosh (Golokganj)",
+            "[riversAtFloodLevel]": "Brahmaputra (Neamatighat), Burhidihing (Chenimari(Khowang))",
+            "[DistrictName]": "Karimganj, Nagaon, Hailakandi, Karbi Anglong West, Cachar, Hojai, Golaghat, Karbi Anglong, Dima-Hasao, Dhemaji, Dibrugarh, Morigaon, Kamrup, South Salmara, Sonitpur, Lakhimpur, Bongaigaon, Barpeta, Goalpara, Baksa, Tamulpur, Udalguri, Darrang, Chirang, Nalbari, Biswanath, Kokrajhar, Bajali, Kamrup (M), Dhubri, Tinsukia, Majuli, Sivasagar, Jorhat, Charaideo",
+            "[DistrictAffectedCount]": 35,
+            "[RCCount]": 154,
+            "[RCTotal]": 154,
+            "RepeatedValues_0": [
+                {
+                    "[RcAffectedDst]": "Bajali",
+                    "[RcAffectedNo]": 2,
+                    "[RcAffectedDetails]": "Bajali, Sarupeta"
+                },
+                {
+                    "[RcAffectedDst]": "Baksa",
+                    "[RcAffectedNo]": 3,
+                    "[RcAffectedDetails]": "Barnagar RC part, Baska, Jalah"
+                },
+                {
+                    "[RcAffectedDst]": "Barpeta",
+                    "[RcAffectedNo]": 6,
+                    "[RcAffectedDetails]": "Barnagar, Sarthebari, Barpeta, Chenga, Baghbar, Kalgachia"
+                },
+                {
+                    "[RcAffectedDst]": "Biswanath",
+                    "[RcAffectedNo]": 4,
+                    "[RcAffectedDetails]": "Halem, Gohpur, Naduar RC part, Biswanath"
+                },
+                {
+                    "[RcAffectedDst]": "Bongaigaon",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Manikpur, Dangtol, Boitamari, Bongaigaon, Srijangram"
+                },
+                {
+                    "[RcAffectedDst]": "Cachar",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Lakhipur, Sonai, Silchar, Udharbond, Katigorah"
+                },
+                {
+                    "[RcAffectedDst]": "Charaideo",
+                    "[RcAffectedNo]": 3,
+                    "[RcAffectedDetails]": "Sapekhati, Sonari, Mahmora"
+                },
+                {
+                    "[RcAffectedDst]": "Chirang",
+                    "[RcAffectedNo]": 3,
+                    "[RcAffectedDetails]": "Bijni, Sidli, Bengtal"
+                },
+                {
+                    "[RcAffectedDst]": "Darrang",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Mangaldoi, Patharighat, Dalgaon, Sipajhar, Pub-Mangaldai"
+                },
+                {
+                    "[RcAffectedDst]": "Dhemaji",
+                    "[RcAffectedNo]": 4,
+                    "[RcAffectedDetails]": "Jonai, Dhemaji, Sissiborgaon, Gogamukh"
+                },
+                {
+                    "[RcAffectedDst]": "Dhubri",
+                    "[RcAffectedNo]": 8,
+                    "[RcAffectedDetails]": "Chapar, Dhubri, South Salmara Part, Athani, Gauripur, Bilasipara, Golakganj, Agamoni"
+                },
+                {
+                    "[RcAffectedDst]": "Dibrugarh",
+                    "[RcAffectedNo]": 7,
+                    "[RcAffectedDetails]": "Chabua, Dibrugarh East, Dibrugarh West, Tengakhat, Moran, Naharkatia, Tingkhong"
+                },
+                {
+                    "[RcAffectedDst]": "Dima-Hasao",
+                    "[RcAffectedNo]": 1,
+                    "[RcAffectedDetails]": "Haflong"
+                },
+                {
+                    "[RcAffectedDst]": "Goalpara",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Lakhipur, Balijana, Matia, Dudhnoi, Rongjuli"
+                },
+                {
+                    "[RcAffectedDst]": "Golaghat",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Bokakhat, Golaghat, Khumtai, Dergaon, Sarupathar"
+                },
+                {
+                    "[RcAffectedDst]": "Hailakandi",
+                    "[RcAffectedNo]": 4,
+                    "[RcAffectedDetails]": "Lala, Algapur, Hailakandi, Katlicherra"
+                },
+                {
+                    "[RcAffectedDst]": "Hojai",
+                    "[RcAffectedNo]": 3,
+                    "[RcAffectedDetails]": "Hojai, Lanka, Doboka"
+                },
+                {
+                    "[RcAffectedDst]": "Jorhat",
+                    "[RcAffectedNo]": 4,
+                    "[RcAffectedDetails]": "Titabor, Jorhat East, Teok, Jorhat West"
+                },
+                {
+                    "[RcAffectedDst]": "Kamrup",
+                    "[RcAffectedNo]": 11,
+                    "[RcAffectedDetails]": "Boko, Kamalpur, Rangia, Chaygaon, North Ghy, Kayan, Hajo, Palashbari, Chamaria, Goroimari, Nagarbera"
+                },
+                {
+                    "[RcAffectedDst]": "Kamrup (M)",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Azara, Chandrapur, Guwahati, Sonapur, Dispur"
+                },
+                {
+                    "[RcAffectedDst]": "Karbi Anglong",
+                    "[RcAffectedNo]": 2,
+                    "[RcAffectedDetails]": "Silonijan, Phuloni"
+                },
+                {
+                    "[RcAffectedDst]": "Karbi Anglong West",
+                    "[RcAffectedNo]": 1,
+                    "[RcAffectedDetails]": "Donkamokam"
+                },
+                {
+                    "[RcAffectedDst]": "Karimganj",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Patherkandi, RK Nagar, Nilambazar, Badarpur, Karimganj"
+                },
+                {
+                    "[RcAffectedDst]": "Kokrajhar",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Bagribari, Kokrajhar, Bhawraguri, Gossaigaon, Dotma"
+                },
+                {
+                    "[RcAffectedDst]": "Lakhimpur",
+                    "[RcAffectedNo]": 7,
+                    "[RcAffectedDetails]": "Nowboicha, Subansiri, Bihpuria, Narayanpur, North Lakhimpur, Kadam, Dhakuakhana"
+                },
+                {
+                    "[RcAffectedDst]": "Majuli",
+                    "[RcAffectedNo]": 2,
+                    "[RcAffectedDetails]": "Majuli, Ujani Majuli"
+                },
+                {
+                    "[RcAffectedDst]": "Morigaon",
+                    "[RcAffectedNo]": 4,
+                    "[RcAffectedDetails]": "Morigaon, Mayong, Bhuragaon, Laharighat"
+                },
+                {
+                    "[RcAffectedDst]": "Nagaon",
+                    "[RcAffectedNo]": 6,
+                    "[RcAffectedDetails]": "Kampur, Raha, Nagaon, Kaliabor, Samaguri, Dhing"
+                },
+                {
+                    "[RcAffectedDst]": "Nalbari",
+                    "[RcAffectedNo]": 7,
+                    "[RcAffectedDetails]": "Paschim Nalbari, Banekuchi, Tihu, Barbhag, Ghograpar, Nalbari, Barkhetri"
+                },
+                {
+                    "[RcAffectedDst]": "Sivasagar",
+                    "[RcAffectedNo]": 4,
+                    "[RcAffectedDetails]": "Sivsagar, Demow, Nazira, Sonari RC part"
+                },
+                {
+                    "[RcAffectedDst]": "Sonitpur",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Chariduar, Dhekiajuli, Thelamara, Tezpur, Naduar"
+                },
+                {
+                    "[RcAffectedDst]": "South Salmara",
+                    "[RcAffectedNo]": 2,
+                    "[RcAffectedDetails]": "Mankachar, South Salmara"
+                },
+                {
+                    "[RcAffectedDst]": "Tamulpur",
+                    "[RcAffectedNo]": 2,
+                    "[RcAffectedDetails]": "Tamulpur, Goreswar"
+                },
+                {
+                    "[RcAffectedDst]": "Tinsukia",
+                    "[RcAffectedNo]": 4,
+                    "[RcAffectedDetails]": "Tinsukia, Sadiya, Margherita, Doomdooma"
+                },
+                {
+                    "[RcAffectedDst]": "Udalguri",
+                    "[RcAffectedNo]": 5,
+                    "[RcAffectedDetails]": "Khairabari, Kalaigaon, Harisinga, Mazbat, Udalguri"
+                }
+            ],
+            "RepeatedValues_1": [
+                {
+                    "[VillagesAffectedDst]": "Karimganj",
+                    "[VillagesAffectedNo]": 429,
+                    "[VillagesAffectedDetails]": "(Patherkandi | 52), (RK Nagar | 102), (Nilambazar | 130), (Badarpur | 37), (Karimganj | 108)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Nagaon",
+                    "[VillagesAffectedNo]": 301,
+                    "[VillagesAffectedDetails]": "(Kampur | 107), (Raha | 77), (Nagaon | 22), (Kaliabor | 54), (Samaguri | 26), (Dhing | 15)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Hailakandi",
+                    "[VillagesAffectedNo]": 119,
+                    "[VillagesAffectedDetails]": "(Lala | 30), (Algapur | 27), (Hailakandi | 38), (Katlicherra | 24)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Karbi Anglong West",
+                    "[VillagesAffectedNo]": 26,
+                    "[VillagesAffectedDetails]": "(Donkamokam | 26)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Cachar",
+                    "[VillagesAffectedNo]": 300,
+                    "[VillagesAffectedDetails]": "(Lakhipur | 11), (Sonai | 47), (Silchar | 74), (Udharbond | 28), (Katigorah | 140)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Hojai",
+                    "[VillagesAffectedNo]": 84,
+                    "[VillagesAffectedDetails]": "(Hojai | 53), (Lanka | 7), (Doboka | 24)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Golaghat",
+                    "[VillagesAffectedNo]": 109,
+                    "[VillagesAffectedDetails]": "(Bokakhat | 62), (Golaghat | 5), (Khumtai | 22), (Dergaon | 17), (Sarupathar | 3)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Karbi Anglong",
+                    "[VillagesAffectedNo]": 13,
+                    "[VillagesAffectedDetails]": "(Silonijan | 4), (Phuloni | 9)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Dima-Hasao",
+                    "[VillagesAffectedNo]": 20,
+                    "[VillagesAffectedDetails]": "(Haflong | 20)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Dhemaji",
+                    "[VillagesAffectedNo]": 292,
+                    "[VillagesAffectedDetails]": "(Jonai | 123), (Dhemaji | 15), (Sissiborgaon | 140), (Gogamukh | 14)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Dibrugarh",
+                    "[VillagesAffectedNo]": 246,
+                    "[VillagesAffectedDetails]": "(Chabua | 18), (Dibrugarh East | 25), (Dibrugarh West | 38), (Tengakhat | 64), (Moran | 30), (Naharkatia | 50), (Tingkhong | 21)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Morigaon",
+                    "[VillagesAffectedNo]": 303,
+                    "[VillagesAffectedDetails]": "(Morigaon | 76), (Mayong | 119), (Bhuragaon | 79), (Laharighat | 29)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Kamrup",
+                    "[VillagesAffectedNo]": 590,
+                    "[VillagesAffectedDetails]": "(Boko | 62), (Kamalpur | 102), (Rangia | 84), (Chaygaon | 4), (North Ghy | 32), (Kayan | 28), (Hajo | 103), (Palashbari | 42), (Chamaria | 60), (Goroimari | 45), (Nagarbera | 28)"
+                },
+                {
+                    "[VillagesAffectedDst]": "South Salmara",
+                    "[VillagesAffectedNo]": 133,
+                    "[VillagesAffectedDetails]": "(Mankachar | 96), (South Salmara | 37)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Sonitpur",
+                    "[VillagesAffectedNo]": 116,
+                    "[VillagesAffectedDetails]": "(Chariduar | 32), (Dhekiajuli | 14), (Thelamara | 16), (Tezpur | 46), (Naduar | 8)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Lakhimpur",
+                    "[VillagesAffectedNo]": 365,
+                    "[VillagesAffectedDetails]": "(Nowboicha | 48), (Subansiri | 30), (Bihpuria | 73), (Narayanpur | 67), (North Lakhimpur | 85), (Kadam | 28), (Dhakuakhana | 34)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Bongaigaon",
+                    "[VillagesAffectedNo]": 379,
+                    "[VillagesAffectedDetails]": "(Manikpur | 76), (Dangtol | 1), (Boitamari | 83), (Bongaigaon | 22), (Srijangram | 197)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Barpeta",
+                    "[VillagesAffectedNo]": 279,
+                    "[VillagesAffectedDetails]": "(Barnagar | 2), (Sarthebari | 54), (Barpeta | 18), (Chenga | 52), (Baghbar | 101), (Kalgachia | 52)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Goalpara",
+                    "[VillagesAffectedNo]": 458,
+                    "[VillagesAffectedDetails]": "(Lakhipur | 198), (Balijana | 107), (Matia | 84), (Dudhnoi | 14), (Rongjuli | 55)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Baksa",
+                    "[VillagesAffectedNo]": 19,
+                    "[VillagesAffectedDetails]": "(Barnagar RC part | 2), (Baska | 12), (Jalah | 5)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Tamulpur",
+                    "[VillagesAffectedNo]": 118,
+                    "[VillagesAffectedDetails]": "(Tamulpur | 44), (Goreswar | 74)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Udalguri",
+                    "[VillagesAffectedNo]": 81,
+                    "[VillagesAffectedDetails]": "(Khairabari | 26), (Kalaigaon | 29), (Harisinga | 4), (Mazbat | 4), (Udalguri | 18)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Darrang",
+                    "[VillagesAffectedNo]": 225,
+                    "[VillagesAffectedDetails]": "(Mangaldoi | 50), (Patharighat | 43), (Dalgaon | 30), (Sipajhar | 50), (Pub-Mangaldai | 52)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Chirang",
+                    "[VillagesAffectedNo]": 17,
+                    "[VillagesAffectedDetails]": "(Bijni | 13), (Sidli | 1), (Bengtal | 3)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Nalbari",
+                    "[VillagesAffectedNo]": 266,
+                    "[VillagesAffectedDetails]": "(Paschim Nalbari | 10), (Banekuchi | 6), (Tihu | 21), (Barbhag | 51), (Ghograpar | 63), (Nalbari | 54), (Barkhetri | 61)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Biswanath",
+                    "[VillagesAffectedNo]": 147,
+                    "[VillagesAffectedDetails]": "(Halem | 82), (Gohpur | 47), (Naduar RC part | 7), (Biswanath | 11)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Kokrajhar",
+                    "[VillagesAffectedNo]": 103,
+                    "[VillagesAffectedDetails]": "(Bagribari | 55), (Kokrajhar | 13), (Bhawraguri | 13), (Gossaigaon | 16), (Dotma | 6)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Bajali",
+                    "[VillagesAffectedNo]": 85,
+                    "[VillagesAffectedDetails]": "(Bajali | 45), (Sarupeta | 40)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Kamrup (M)",
+                    "[VillagesAffectedNo]": 56,
+                    "[VillagesAffectedDetails]": "(Azara | 8), (Chandrapur | 28), (Guwahati | 3), (Sonapur | 15), (Dispur | 2)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Dhubri",
+                    "[VillagesAffectedNo]": 717,
+                    "[VillagesAffectedDetails]": "(Chapar | 113), (Dhubri | 101), (South Salmara Part | 164), (Athani | 112), (Gauripur | 73), (Bilasipara | 43), (Golakganj | 67), (Agamoni | 44)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Jorhat",
+                    "[VillagesAffectedNo]": 65,
+                    "[VillagesAffectedDetails]": "(Jorhat East | 23), (Teok | 19), (Jorhat West | 23)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Tinsukia",
+                    "[VillagesAffectedNo]": 197,
+                    "[VillagesAffectedDetails]": "(Tinsukia | 24), (Sadiya | 39), (Margherita | 77), (Doomdooma | 57)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Majuli",
+                    "[VillagesAffectedNo]": 108,
+                    "[VillagesAffectedDetails]": "(Majuli | 67), (Ujani Majuli | 41)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Sivasagar",
+                    "[VillagesAffectedNo]": 144,
+                    "[VillagesAffectedDetails]": "(Sivsagar | 64), (Demow | 52), (Nazira | 25), (Sonari RC part | 3)"
+                },
+                {
+                    "[VillagesAffectedDst]": "Charaideo",
+                    "[VillagesAffectedNo]": 93,
+                    "[VillagesAffectedDetails]": "(Sapekhati | 21), (Sonari | 21), (Mahmora | 51)"
+                }
+            ],
+            "[VillageTotal]": 7003
+            
+        }
+    }
+]

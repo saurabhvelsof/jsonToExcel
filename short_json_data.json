@@ -1,0 +1,74 @@
+[
+  {
+    "Sheet1": {
+      "[Heading]": "Assam Cumulative Flood Report from 01-05-2024 to 07-07-2024",
+      "[SubHeading]": "Assam Cumulative Flood Report from 01-05-2024 to 07-07-2024",
+      "RepeatedValues_0": [
+        {
+          "[RcAffectedDst]": "Bajali",
+          "[RcAffectedNo]": 2,
+          "[RcAffectedDetails]": "Bajali, Sarupeta"
+        },
+        {
+          "[RcAffectedDst]": "Baksa",
+          "[RcAffectedNo]": 3,
+          "[RcAffectedDetails]": "Barnagar RC part, Baska, Jalah"
+        }
+      ],
+      "RepeatedValues_1": [
+        {
+          "[InfBridgeDst]": "Bajali",
+          "[InfBridgeNumber]": 3,
+          "RepeatedValues": [
+            {
+              "[InfBridgeRc]": "(Bajali | 0)",
+              "RepeatedValues": [
+                {
+                  "[InfBridgeName]": "Nil",
+                  "[InfBridgeDept]": "Nil",
+                  "[InfBridgeVillage]": "Nil",
+                  "[InfBridgeLocation]": "Nil",
+                  "[InfBridgeLong]": "Nil",
+                  "[InfBridgeLat]": "Nil",
+                  "[InfBridgeRemarks]": "Nil"
+                }
+              ]
+            },
+            {
+              "[InfBridgeRc]": "(Sarupeta | 3)",
+              "RepeatedValues": [
+                {
+                  "[InfBridgeName]": "RCC bridge No 2/1( at Ch. 1600M) on Sarupeta Bhalaguri Road, Approach road damaged.",
+                  "[InfBridgeDept]": "PWD (Roads)",
+                  "[InfBridgeVillage]": "Luashur",
+                  "[InfBridgeLocation]": "at Luwashur village",
+                  "[InfBridgeLong]": 91.06,
+                  "[InfBridgeLat]": 26.5,
+                  "[InfBridgeRemarks]": "Report received from AEE, PWRD, Bhawnipur -Sarbhog Territorial Road Sub Division Dated 20/06/24"
+                },
+                {
+                  "[InfBridgeName]": "RCC bridge No 3/1( at Ch. 2400M) on Sarupeta Majgaon Road, Approach road damaged.",
+                  "[InfBridgeDept]": "PWD (Roads)",
+                  "[InfBridgeVillage]": "Puran Bhawanipur",
+                  "[InfBridgeLocation]": "Village Puran Bhawanipur",
+                  "[InfBridgeLong]": 91.05,
+                  "[InfBridgeLat]": 26.49,
+                  "[InfBridgeRemarks]": "Report received from AEE, PWRD, Bhawnipur -Sarbhog Territorial Road Sub Division Dated 20/06/24"
+                },
+                {
+                  "[InfBridgeName]": "RCC bridge No 3/1( at Ch. 2100M) on Golia to Tapa Road, Approach road damaged.",
+                  "[InfBridgeDept]": "PWD (Roads)",
+                  "[InfBridgeVillage]": "Gathiapara",
+                  "[InfBridgeLocation]": "Gathiapara",
+                  "[InfBridgeLong]": 91.06,
+                  "[InfBridgeLat]": 26.43,
+                  "[InfBridgeRemarks]": "Report received from AEE, PWRD, Bhawnipur -Sarbhog Territorial Road Sub Division Dated 20/06/24"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

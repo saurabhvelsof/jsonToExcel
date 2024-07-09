@@ -14,87 +14,125 @@ const loadTemplateAndPopulateData = async () => {
     await workbook.xlsx.readFile(templateFilePath);
     const worksheet = workbook.getWorksheet(1); // Assuming data goes into the first sheet
 
-    // Function to find placeholders and their positions
-    const findPlaceholders = () => {
-        const placeholders = {};
-        worksheet.eachRow((row, rowNumber) => {
-            row.eachCell((cell, colNumber) => {
-                const cellValue = cell.value;
-                if (typeof cellValue === 'string' && cellValue.startsWith('[') && cellValue.endsWith(']')) {
-                    if (!placeholders[cellValue]) {
-                        placeholders[cellValue] = { row: rowNumber, col: colNumber };
-                    }
-                }
-            });
+    // Find placeholders and their positions
+    const placeholders = {};
+    worksheet.eachRow((row, rowNumber) => {
+        row.eachCell((cell, colNumber) => {
+            const cellValue = cell.value;
+            if (typeof cellValue === 'string' && cellValue.startsWith('[') && cellValue.endsWith(']')) {
+                placeholders[cellValue] = { row: rowNumber, col: colNumber };
+            }
         });
-        return placeholders;
+    });
+
+    // Copy styles from the placeholder cell to the new cell
+    const copyCellStyles = (sourceCell, targetCell) => {
+        targetCell.style = { ...sourceCell.style };
     };
 
-    const placeholders = findPlaceholders();
-
-    // Function to find the merge range for a given cell address
-    const findMergeRange = (cellAddress) => {
-        const cell = worksheet.getCell(cellAddress);
-        const row = cell.row;
-        const col = cell.col;
+    // Find the merge range for a given cell address
+    const findMergeRange = (cell) => {
         for (const key in worksheet._merges) {
             const merge = worksheet._merges[key].model;
-            if (row >= merge.top && row <= merge.bottom && col >= merge.left && col <= merge.right) {
-                return {
-                    startCol: merge.left,
-                    endCol: merge.right,
-                    startRow: merge.top,
-                    endRow: merge.bottom,
-                };
+            if (
+                cell.row >= merge.top &&
+                cell.row <= merge.bottom &&
+                cell.col >= merge.left &&
+                cell.col <= merge.right
+            ) {
+                return merge;
             }
         }
         return null;
     };
 
-    // Replace placeholders with JSON data
-    Object.keys(placeholders).forEach((key) => {
-        const { row, col } = placeholders[key];
-        if (jsonData[0].Sheet1[key] !== undefined) {
-            worksheet.getRow(row).getCell(col).value = jsonData[0].Sheet1[key];
+    // Check if a range is already merged
+    const isRangeAlreadyMerged = (startCell, endCell) => {
+        for (const key in worksheet._merges) {
+            const merge = worksheet._merges[key].model;
+            const mergeStartCell = `${String.fromCharCode(64 + merge.left)}${merge.top}`;
+            const mergeEndCell = `${String.fromCharCode(64 + merge.right)}${merge.bottom}`;
+            if ((startCell >= mergeStartCell && startCell <= mergeEndCell) ||
+                (endCell >= mergeStartCell && endCell <= mergeEndCell)) {
+                return true;
+            }
         }
-    });
+        return false;
+    };
 
-    // Helper function to populate nested data and handle merged cells
-    const populateNestedData = (startRow, dataKey, placeholders) => {
-        const data = jsonData[0].Sheet1[dataKey];
-        if (data && data.length > 0) {
-            data.forEach((item, index) => {
-                worksheet.insertRow(startRow + index);
-                Object.keys(item).forEach(placeholder => {
-                    const pos = placeholders[placeholder];
-                    if (pos) {
-                        const cellAddress = `${String.fromCharCode(64 + pos.col)}${startRow + index}`;
-                        worksheet.getCell(cellAddress).value = item[placeholder];
-
-                        // Handle merged cells
-                        const mergeInfo = findMergeRange(`${String.fromCharCode(64 + pos.col)}${pos.row}`);
-                        if (mergeInfo) {
-                            const startColChar = String.fromCharCode(64 + mergeInfo.startCol);
-                            const endColChar = String.fromCharCode(64 + mergeInfo.endCol);
-                            const newMergeRange = `${startColChar}${startRow + index}:${endColChar}${startRow + index}`;
-                            worksheet.mergeCells(newMergeRange);
-                        }
-                    }
-                });
-            });
+    // Update placeholders' positions after row insertion
+    const updatePlaceholders = (insertedRow) => {
+        for (const key in placeholders) {
+            if (placeholders[key].row >= insertedRow) {
+                placeholders[key].row += 1;
+            }
         }
     };
 
-    // Infer nested data keys from JSON data
-    Object.keys(jsonData[0].Sheet1).forEach(dataKey => {
-        if (dataKey.startsWith('RepeatedValues_')) {
-            const firstPlaceholder = Object.keys(jsonData[0].Sheet1[dataKey][0])[0];
-            if (placeholders[firstPlaceholder]) {
-                const startRow = placeholders[firstPlaceholder].row + 1;
-                populateNestedData(startRow, dataKey, placeholders);
+    // Populate single value placeholders
+    const populateSingleValuePlaceholders = (data) => {
+        for (const key in data) {
+            if (!key.startsWith('RepeatedValues_') && !key.startsWith('RepeatedValues')) {
+                const { row, col } = placeholders[key];
+                worksheet.getRow(row).getCell(col).value = data[key];
             }
         }
-    });
+    };
+
+    // Populate multiple value placeholders recursively
+    const populateMultipleValuePlaceholders = (startRow, dataArray) => {
+        // Reverse the dataArray to populate in the correct order
+        dataArray.reverse().forEach((item, index) => {
+            const newRow = worksheet.insertRow(startRow);
+            updatePlaceholders(startRow);
+
+            for (const key in item) {
+                const pos = placeholders[key];
+                if (pos) {
+                    const cellAddress = `${String.fromCharCode(64 + pos.col)}${startRow}`;
+                    const newCell = worksheet.getCell(cellAddress);
+                    const originalCell = worksheet.getCell(`${String.fromCharCode(64 + pos.col)}${pos.row}`);
+                    newCell.value = item[key];
+                    copyCellStyles(originalCell, newCell);
+
+                    const mergeInfo = findMergeRange(originalCell);
+                    if (mergeInfo) {
+                        const startColChar = String.fromCharCode(64 + mergeInfo.left);
+                        const endColChar = String.fromCharCode(64 + mergeInfo.right);
+                        const newMergeRange = `${startColChar}${startRow}:${endColChar}${startRow}`;
+                        const startCell = `${startColChar}${startRow}`;
+                        const endCell = `${endColChar}${startRow}`;
+                        if (!isRangeAlreadyMerged(startCell, endCell)) {
+                            worksheet.mergeCells(newMergeRange);
+                        }
+                    }
+                }
+            }
+
+            for (const key in item) {
+                if (key.startsWith('RepeatedValues_') || key.startsWith('RepeatedValues')) {
+                    const nestedDataArray = item[key];
+                    const nestedPlaceholder = Object.keys(nestedDataArray[0])[0];
+                    const nestedStartRow = placeholders[nestedPlaceholder].row + 1;
+                    populateMultipleValuePlaceholders(nestedStartRow, nestedDataArray);
+                }
+            }
+        });
+    };
+
+    // Traverse the JSON data and call respective functions
+    const sheetData = jsonData[0].Sheet1;
+    for (const dataKey in sheetData) {
+        if (dataKey.startsWith('RepeatedValues_') || dataKey.startsWith('RepeatedValues')) {
+            const firstPlaceholder = Object.keys(sheetData[dataKey][0])[0];
+            if (placeholders[firstPlaceholder]) {
+                const startRow = placeholders[firstPlaceholder].row + 1;
+                populateMultipleValuePlaceholders(startRow, sheetData[dataKey]);
+            }
+        } else {
+            populateSingleValuePlaceholders(sheetData);
+        }
+    }
 
     // Save the updated workbook
     const outputFilePath = path.join(__dirname, 'updated_report.xlsx');

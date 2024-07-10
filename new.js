@@ -14,6 +14,26 @@ const loadTemplateAndPopulateData = async () => {
   await workbook.xlsx.readFile(templateFilePath);
   const worksheet = workbook.getWorksheet(1); // Assuming data goes into the first sheet
 
+  // Find placeholders and their positions
+  const placeholders = {};
+  worksheet.eachRow((row, rowNumber) => {
+    row.eachCell((cell, colNumber) => {
+      const cellValue = cell.value;
+      if (
+        typeof cellValue === "string" &&
+        cellValue.startsWith("[") &&
+        cellValue.endsWith("]")
+      ) {
+        placeholders[cellValue] = { row: rowNumber, col: colNumber };
+      }
+    });
+  });
+
+  // Copy styles from the placeholder cell to the new cell
+  const copyCellStyles = (sourceCell, targetCell) => {
+    targetCell.style = { ...sourceCell.style };
+  };
+
   // Find the merge range for a given cell address
   const findMergeRange = (cell) => {
     for (const key in worksheet._merges) {
@@ -28,37 +48,6 @@ const loadTemplateAndPopulateData = async () => {
       }
     }
     return null;
-  };
-
-  // Find placeholders and their positions
-
-  const placeholders = {};
-  worksheet.eachRow((row, rowNumber) => {
-    row.eachCell((cell, colNumber) => {
-      const cellValue = cell.value;
-      if (
-        typeof cellValue === "string" &&
-        cellValue.startsWith("[") &&
-        cellValue.endsWith("]")
-      ) {
-        const mergeRange = findMergeRange(cell);
-        if (mergeRange) {
-          // If the cell is merged, use the starting cell of the merge range
-          placeholders[cellValue] = {
-            row: mergeRange.top,
-            col: mergeRange.left,
-          };
-        } else {
-          // If the cell is not merged, use the current cell's position
-          placeholders[cellValue] = { row: rowNumber, col: colNumber };
-        }
-      }
-    });
-  });
-
-  // Copy styles from the placeholder cell to the new cell
-  const copyCellStyles = (sourceCell, targetCell) => {
-    targetCell.style = { ...sourceCell.style };
   };
 
   // Check if a range is already merged
@@ -107,23 +96,22 @@ const loadTemplateAndPopulateData = async () => {
   const populateMultipleValuePlaceholders = (startRow, dataArray) => {
     // Reverse the dataArray to populate in the correct order
     dataArray.reverse().forEach((item, index) => {
-      const newRow = worksheet.insertRow(startRow, [], "i");
       const originalRow = worksheet.getRow(startRow - 1);
-      newRow._cells = originalRow._cells;
-      //   worksheet.duplicateRow(startRow - 1, (amount = 1), (insert = true));
+      //   const newRow = worksheet.insertRow(startRow, [], "i");
+      worksheet.duplicateRow(startRow - 1, (amount = 1), (insert = true));
       // Ensure both rows have the _cells array and they have the same length
-      // if (
-      //   originalRow._cells &&
-      //   newRow._cells &&
-      //   originalRow._cells.length === newRow._cells.length
-      // ) {
-      //   for (let i = 1; i < originalRow._cells.length; i++) {
-      //     // Ensure both cells have the _mergeCount property
-      //     if (originalRow._cells[i]._mergeCount !== undefined) {
-      //       newRow._cells[i]._mergeCount = originalRow._cells[i]._mergeCount;
-      //     }
-      //   }
-      // }
+    //   if (
+    //     originalRow._cells &&
+    //     newRow._cells &&
+    //     originalRow._cells.length === newRow._cells.length
+    //   ) {
+    //     for (let i = 1; i < originalRow._cells.length; i++) {
+    //       // Ensure both cells have the _mergeCount property
+    //       if (originalRow._cells[i]._mergeCount !== undefined) {
+    //         newRow._cells[i]._mergeCount = originalRow._cells[i]._mergeCount;
+    //       }
+    //     }
+    //   }
 
       updatePlaceholders(startRow);
       for (const key in item) {
@@ -146,24 +134,20 @@ const loadTemplateAndPopulateData = async () => {
           const originalCell = worksheet.getCell(
             `${String.fromCharCode(64 + pos.col)}${pos.row}`
           );
-          // copyCellStyles(originalCell, newCell);
+          newCell.value = item[key];
+          //   copyCellStyles(originalCell, newCell);
 
-          const mergeInfo = findMergeRange(originalCell);
-          if (mergeInfo) {
-            const startColChar = String.fromCharCode(64 + mergeInfo.left);
-            const endColChar = String.fromCharCode(64 + mergeInfo.right);
-            const newMergeRange = `${startColChar}${startRow}:${endColChar}${startRow}`;
-            const startCell = `${startColChar}${startRow}`;
-            const endCell = `${endColChar}${startRow}`;
-
-            const mergeCellAddress = `${String.fromCharCode(
-              64 + mergeInfo.left
-            )}${startRow}`;
-            const mergeCell = worksheet.getCell(mergeCellAddress);
-            mergeCell.value = item[key];
-          } else {
-            newCell.value = item[key];
-          }
+          //   const mergeInfo = findMergeRange(originalCell);
+          //   if (mergeInfo) {
+          //     const startColChar = String.fromCharCode(64 + mergeInfo.left);
+          //     const endColChar = String.fromCharCode(64 + mergeInfo.right);
+          //     const newMergeRange = `${startColChar}${startRow}:${endColChar}${startRow}`;
+          //     const startCell = `${startColChar}${startRow}`;
+          //     const endCell = `${endColChar}${startRow}`;
+          //     if (!isRangeAlreadyMerged(startCell, endCell)) {
+          //       worksheet.mergeCells(newMergeRange);
+          //     }
+          //   }
         }
       }
     });

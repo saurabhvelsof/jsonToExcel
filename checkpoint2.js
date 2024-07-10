@@ -109,21 +109,20 @@ const loadTemplateAndPopulateData = async () => {
     dataArray.reverse().forEach((item, index) => {
       const newRow = worksheet.insertRow(startRow, [], "i");
       const originalRow = worksheet.getRow(startRow - 1);
-      newRow._cells = originalRow._cells;
       //   worksheet.duplicateRow(startRow - 1, (amount = 1), (insert = true));
       // Ensure both rows have the _cells array and they have the same length
-      // if (
-      //   originalRow._cells &&
-      //   newRow._cells &&
-      //   originalRow._cells.length === newRow._cells.length
-      // ) {
-      //   for (let i = 1; i < originalRow._cells.length; i++) {
-      //     // Ensure both cells have the _mergeCount property
-      //     if (originalRow._cells[i]._mergeCount !== undefined) {
-      //       newRow._cells[i]._mergeCount = originalRow._cells[i]._mergeCount;
-      //     }
-      //   }
-      // }
+      if (
+        originalRow._cells &&
+        newRow._cells &&
+        originalRow._cells.length === newRow._cells.length
+      ) {
+        for (let i = 1; i < originalRow._cells.length; i++) {
+          // Ensure both cells have the _mergeCount property
+          if (originalRow._cells[i]._mergeCount !== undefined) {
+            newRow._cells[i]._mergeCount = originalRow._cells[i]._mergeCount;
+          }
+        }
+      }
 
       updatePlaceholders(startRow);
       for (const key in item) {
@@ -155,15 +154,11 @@ const loadTemplateAndPopulateData = async () => {
             const newMergeRange = `${startColChar}${startRow}:${endColChar}${startRow}`;
             const startCell = `${startColChar}${startRow}`;
             const endCell = `${endColChar}${startRow}`;
-
-            const mergeCellAddress = `${String.fromCharCode(
-              64 + mergeInfo.left
-            )}${startRow}`;
-            const mergeCell = worksheet.getCell(mergeCellAddress);
-            mergeCell.value = item[key];
-          } else {
-            newCell.value = item[key];
+            if (!isRangeAlreadyMerged(startCell, endCell)) {
+              worksheet.mergeCells(newMergeRange);
+            }
           }
+          newCell.value = item[key];
         }
       }
     });

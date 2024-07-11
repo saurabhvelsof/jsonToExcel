@@ -3,13 +3,15 @@ const fs = require("fs");
 const path = require("path");
 
 // Load JSON data
-const jsonFilePath = path.join(__dirname, "output.json");
+const jsonFilePath = path.join(__dirname, "./shortJsonData/section3.json");
 const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, "utf-8"));
 
 // Load the Excel template
 const templateFilePath = path.join(__dirname, "FloodStateCR.xlsx");
 
 const loadTemplateAndPopulateData = async () => {
+  console.time("Report Generation Time"); // Start the timer
+
   const workbook = new ExcelJS.Workbook();
   await workbook.xlsx.readFile(templateFilePath);
   const worksheet = workbook.getWorksheet(1); // Assuming data goes into the first sheet
@@ -182,6 +184,8 @@ const loadTemplateAndPopulateData = async () => {
   const outputFilePath = path.join(__dirname, "updated_report.xlsx");
   await workbook.xlsx.writeFile(outputFilePath);
   console.log("File saved.");
+
+  console.timeEnd("Report Generation Time"); // End the timer
 };
 
 loadTemplateAndPopulateData().catch((error) => {

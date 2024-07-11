@@ -1,0 +1,243 @@
+[
+  {
+    "Sheet1": {
+      "[RCTotal]": 154,
+      "RepeatedValues_0": [
+        {
+          "[InfEmbBreachedDst]": "Cachar",
+          "[InfEmbBreachedNumber]": 15,
+          "RepeatedValues": [
+            {
+              "[InfEmbBreachedRc]": "(Lakhipur | 0)",
+              "RepeatedValues": [
+                {
+                  "[InfEmbBreachedName]": "Nil",
+                  "[InfEmbBreachedDept]": "Nil",
+                  "[InfEmbBreachedVillage]": "Nil",
+                  "[InfEmbBreachedLocation]": "Nil",
+                  "[InfEmbBreachedLong]": "Nil",
+                  "[InfEmbBreachedLat]": "Nil",
+                  "[InfEmbBreachedRemarks]": "Nil"
+                }
+              ]
+            },
+            {
+              "[InfEmbBreachedRc]": "(Sonai | 7)",
+              "RepeatedValues": [
+                {
+                  "[InfEmbBreachedName]": "Dyke along L/B of River Sonai at Tundurkandi (Ward  No 11) Sonai Town ",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Tundurkandi",
+                  "[InfEmbBreachedLocation]": "Near Satkarakandi High School",
+                  "[InfEmbBreachedLong]": 92.87,
+                  "[InfEmbBreachedLat]": 24.75,
+                  "[InfEmbBreachedRemarks]": "Dyke along L/B of River Sonai at Tundurkandi (Ward  No 11) Sonai Town, length about 50 M, As reported by Water Resource Sonai Sub-Division, on dated 29.05.2024."
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke along L/B of river Sonai from S.M Road to Darmikhal R/B of Rukni ",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Punirmukh",
+                  "[InfEmbBreachedLocation]": "Punirmukh",
+                  "[InfEmbBreachedLong]": 92.87,
+                  "[InfEmbBreachedLat]": 24.65,
+                  "[InfEmbBreachedRemarks]": "Length Ch-1500M, As reported by WRD Silchar on dated 03.06.2024. "
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke along B/B of river Rukni from Paniborah to Bhagabazar and Dulalgram to Tillanagar ",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Islamabad",
+                  "[InfEmbBreachedLocation]": "Islamabad Saptagram ",
+                  "[InfEmbBreachedLong]": 92.84,
+                  "[InfEmbBreachedLat]": 24.55,
+                  "[InfEmbBreachedRemarks]": "Dyke along B/B of river Rukni from Paniborah to Bhagabazar and Dulalgram to Tillanagar, Length about- 180 M, 150 M, as reported by EE WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Ring Bund at Village Jhangerballi on L/B of Borak ",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Jhangerbali",
+                  "[InfEmbBreachedLocation]": "Jhangerbali",
+                  "[InfEmbBreachedLong]": 92.52,
+                  "[InfEmbBreachedLat]": 24.46,
+                  "[InfEmbBreachedRemarks]": "Ring Bund at Village Jhangerballi on L/B of Borak, Length about 650M as reported by WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke along L/B of river sonai from S.M Road to Dharmikhal (R/B of Rukni ",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Punirmukh",
+                  "[InfEmbBreachedLocation]": "Punirmukh, Sluice Rukni Pt-II",
+                  "[InfEmbBreachedLong]": 92.87,
+                  "[InfEmbBreachedLat]": 24.65,
+                  "[InfEmbBreachedRemarks]": "Dyke along L/B of river sonai from S.M Road to Dharmikhal (R/B of Rukni, Length about 20M, on as reported by WRD Silchar, on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke along L/B of river Sonai from S.M Road to Dharmikhal (L/B of Rukni)",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Dharmikhal Grant",
+                  "[InfEmbBreachedLocation]": "Bekirpar, Pakoirpar, Ghandinagar",
+                  "[InfEmbBreachedLong]": 92.51,
+                  "[InfEmbBreachedLat]": 24.38,
+                  "[InfEmbBreachedRemarks]": "Dyke along B/B of river Rukni from Paniborah to Bhagabazar and Dulalgram to Tillanagar, Length about 250 M, as reported by EE WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Duke along R/B of River Sonai from Palonghat to Upwards",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Bongram",
+                  "[InfEmbBreachedLocation]": "Bontarapur",
+                  "[InfEmbBreachedLong]": 92.91,
+                  "[InfEmbBreachedLat]": 24.64,
+                  "[InfEmbBreachedRemarks]": "Duke along R/B of River Sonai from Palonghat to Upwards, length about 80 M, as reported by WRD Silchar on dated 11.06.2024"
+                }
+              ]
+            },
+            {
+              "[InfEmbBreachedRc]": "(Silchar | 8)",
+              "RepeatedValues": [
+                {
+                  "[InfEmbBreachedName]": "Dyke along B/B of Ghagra from ST Road",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Devid Sonpur",
+                  "[InfEmbBreachedLocation]": "Devid Sonapur",
+                  "[InfEmbBreachedLong]": 92.72,
+                  "[InfEmbBreachedLat]": 24.84,
+                  "[InfEmbBreachedRemarks]": "Dyke along B/B of Ghagra from ST Road to PWD Bridge confluence breach occurred at Rakhal Khalerpar, Tuloma, Hatirhar ( Ch.2500M, Ch. 2700m, Ch 50M, Ch 3800M) as per report received from Silchar W.R. Sub Division Silchar as on dated 06.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke along L/B of Borak from Massimpur to Kathakhal. ",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Gagrapar Part – I",
+                  "[InfEmbBreachedLocation]": "Gagrapar Pt-I",
+                  "[InfEmbBreachedLong]": 92.39,
+                  "[InfEmbBreachedLat]": 24.46,
+                  "[InfEmbBreachedRemarks]": "Dyke along L/B of Borak from Massimpur to Kathakhal. Length at the time of Breach (m)- 22, As reported by EE WRD Silchar on dated 03.07.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke Along  L/B of River Borak from Tarapur to Massimpur",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Tupkhana Part – I",
+                  "[InfEmbBreachedLocation]": "Tupkhana",
+                  "[InfEmbBreachedLong]": 92.76,
+                  "[InfEmbBreachedLat]": 24.86,
+                  "[InfEmbBreachedRemarks]": "Dyke Along  L/B of River Borak from Tarapur to Massimpur, Length about- 450m as reported by EE WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke Along  L/B of River Borak from Uttarkrishnapur to Tarapur (Tarapur Ring Bond)",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Uttar Krishnapur Part – I",
+                  "[InfEmbBreachedLocation]": "Uttarkrishnapur",
+                  "[InfEmbBreachedLong]": 92.78,
+                  "[InfEmbBreachedLat]": 24.84,
+                  "[InfEmbBreachedRemarks]": "Dyke Along  L/B of River Borak from Uttarkrishnapur to Tarapur (Tarapur Ring Bond) Length about- 300m as reported by EE WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Drainage of low-lying area near Chandpur in Borkhola Circle",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Ujangram (Borkhola)",
+                  "[InfEmbBreachedLocation]": "Ujangram",
+                  "[InfEmbBreachedLong]": 92.71,
+                  "[InfEmbBreachedLat]": 24.91,
+                  "[InfEmbBreachedRemarks]": "Drainage of low-lying area near Chandpur in Borkhola Circle  Length about- 20m as reported by EE WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke Along  L/B of River Borak from Uttarkrishnapur to Tarapur",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Uttar Krishnapur Part – I",
+                  "[InfEmbBreachedLocation]": "Suktipatty, Bhuia Godi, Modhurbond, Bethukandi",
+                  "[InfEmbBreachedLong]": 92.8,
+                  "[InfEmbBreachedLat]": 24.82,
+                  "[InfEmbBreachedRemarks]": "Dyke Along  L/B of River Borak from Uttarkrishnapur to Tarapur Length about- 20m, 20m, 20m, 20m, 20m, 20m as reported by EE WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke along L/B of river Borak from Massimpur to Kathakal",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Kumarpara",
+                  "[InfEmbBreachedLocation]": "Nayagram near Pachim Kumarpara, Ghagrapar, Roypur Tuker gram to Peladahar, Suktara Barakpar",
+                  "[InfEmbBreachedLong]": 92.7,
+                  "[InfEmbBreachedLat]": 24.88,
+                  "[InfEmbBreachedRemarks]": "Dyke along L/B of river Borak from Massimpur to Kathakal  Length about- 18m, 22m, 800m, 20m, 300m  as reported by EE WRD Silchar on dated 11.06.2024"
+                },
+                {
+                  "[InfEmbBreachedName]": "Dyke along B/B of Ghagra from ST Road to PWD Bridge ",
+                  "[InfEmbBreachedDept]": "Water Resource Deptt.",
+                  "[InfEmbBreachedVillage]": "Rakhal Khalerpar Part – I",
+                  "[InfEmbBreachedLocation]": "Rakhal Khalerpar, Hathirhar, Manipuri Basti, Tuloma, Kashipur, Rongpur, Angarjur",
+                  "[InfEmbBreachedLong]": 92.71,
+                  "[InfEmbBreachedLat]": 24.82,
+                  "[InfEmbBreachedRemarks]": "Dyke along B/B of Ghagra from ST Road to PWD Bridge  Length about- 50m, 50m,4400, 1500m, 495m, 1602m,25m, 20m, 20m, 20m as reported by EE WRD Silchar on dated 11.06.2024"
+                }
+              ]
+            },
+            {
+              "[InfEmbBreachedRc]": "(Udharbond | 0)",
+              "RepeatedValues": [
+                {
+                  "[InfEmbBreachedName]": "Nil",
+                  "[InfEmbBreachedDept]": "Nil",
+                  "[InfEmbBreachedVillage]": "Nil",
+                  "[InfEmbBreachedLocation]": "Nil",
+                  "[InfEmbBreachedLong]": "Nil",
+                  "[InfEmbBreachedLat]": "Nil",
+                  "[InfEmbBreachedRemarks]": "Nil"
+                }
+              ]
+            },
+            {
+              "[InfEmbBreachedRc]": "(Katigorah | 0)",
+              "RepeatedValues": [
+                {
+                  "[InfEmbBreachedName]": "Nil",
+                  "[InfEmbBreachedDept]": "Nil",
+                  "[InfEmbBreachedVillage]": "Nil",
+                  "[InfEmbBreachedLocation]": "Nil",
+                  "[InfEmbBreachedLong]": "Nil",
+                  "[InfEmbBreachedLat]": "Nil",
+                  "[InfEmbBreachedRemarks]": "Nil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "RepeatedValues_1": [
+        {
+          "[p4]": "Value7",
+          "[p5]": "Value8",
+          "RepeatedValues": [
+            {
+              "[p6]": "Value9",
+              "RepeatedValues": [
+                {
+                  "[p7]": "Value10",
+                  "[p8]": "Value11"
+                }
+              ]
+            },
+            {
+              "[p6]": "Value12",
+              "RepeatedValues": [
+                {
+                  "[p7]": "Value13",
+                  "[p8]": "Value14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "[p4]": "Value15",
+          "[p5]": "Value16",
+          "RepeatedValues": [
+            {
+              "[p6]": "Value17",
+              "RepeatedValues": [
+                {
+                  "[p7]": "Value18",
+                  "[p8]": "Value19"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

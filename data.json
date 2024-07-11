@@ -1,0 +1,19 @@
+[
+  {
+    "Sheet1": {
+      "[RCTotal]": 154,
+      "RepeatedValues_0": [
+        {
+          "[p1]": "Value1",
+          "[p2]": "Value2",
+          "[p3]": "Value3"
+        },
+        {
+          "[p1]": "Value4",
+          "[p2]": "Value5",
+          "[p3]": "Value6"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[
+    {
+      "Sheet1": {
+            "[riversAtDangerLevel]": "Kopili (Kampur), Kopili (Dharamtul), Brahmaputra (Dibrugarh), Brahmaputra (Neamatighat), Dikhou (Sivasagar), Jia-Bharali (Nt Road Crossing), Beki (Road Bridge), Brahmaputra (Tezpur), Subansiri (Badatighat), Disang (Nanglamuraghat), Burhidihing (Chenimari(Khowang)), Brahmaputra (Guwahati), Brahmaputra (Dhubri), Dhansiri (S) (Numaligarh), Puthimari (Nh Road Crossing), Brahmaputra (Goalpara), Sankosh (Golokganj)",
+            "[riversAtFloodLevel]": "Brahmaputra (Neamatighat), Burhidihing (Chenimari(Khowang))",
+            "[DistrictName]": "Karimganj, Nagaon, Hailakandi, Karbi Anglong West, Cachar, Hojai, Golaghat, Karbi Anglong, Dima-Hasao, Dhemaji, Dibrugarh, Morigaon, Kamrup, South Salmara, Sonitpur, Lakhimpur, Bongaigaon, Barpeta, Goalpara, Baksa, Tamulpur, Udalguri, Darrang, Chirang, Nalbari, Biswanath, Kokrajhar, Bajali, Kamrup (M), Dhubri, Tinsukia, Majuli, Sivasagar, Jorhat, Charaideo",
+            "[DistrictAffectedCount]": 35,
+            "[RCCount]": 154
+      }
+    }
+  ]
+  
